@@ -1,16 +1,10 @@
 {
-  "manifest_version": 2,
-
-  "name": "Getting started example",
-  "description": "This extension shows a Google Image search result for the current page",
-  "version": "1.0",
-
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
+  "name": "Deck",
+  "description": "Extension that provides a customizable number of to do lists that are visible whenever you open a new tab.",
+  "version": "0.1",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
   },
-  "permissions": [
-    "activeTab",
-    "https://ajax.googleapis.com/"
-  ]
+  "options_page": "settings.html",
+  "update_url": "http://github.com/nakulpathak3/chrome-newtab-todo/raw/master/updates.xml"
 }
