@@ -1,10 +1,10 @@
 {
   "name": "Deck",
   "description": "Extension that provides a customizable number of to do lists that are visible whenever you open a new tab.",
-  "version": "0.1",
+  "version": "0.0.1",
+  "manifest_version": 2,
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
-  "options_page": "settings.html",
   "update_url": "http://github.com/nakulpathak3/chrome-newtab-todo/raw/master/updates.xml"
 }
