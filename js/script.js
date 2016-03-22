@@ -10,5 +10,7 @@ xhr.send();
 
 var iDiv = document.createElement('div');
 var response_body = JSON.parse(xhr.response);
-iDiv.textContent = response_body["photos"][0]["image_url"];
+
+var random_num = Math.floor(Math.random() * response_body["photos"].length);
+iDiv.textContent = response_body["photos"][random_num]["image_url"];
 document.getElementsByTagName('body')[0].appendChild(iDiv);

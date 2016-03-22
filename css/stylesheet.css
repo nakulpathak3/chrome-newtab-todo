@@ -1,5 +1,4 @@
-h1 {
+body {
   font-family: Georgia;
-  color: rgba(255, 25, 32, 0.8);
-  background-color: black;
+  color: #333;
 }
