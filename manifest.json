@@ -9,8 +9,9 @@
   },
   "content_scripts": [
     {
-      "css": ["style.css"],
-      "js": ["jquery-1.12.2.min.js", "script.js"]
+      "matches": ["http://*/*"],
+      "css": ["css/stylesheet.css"],
+      "js": ["js/script.js"]
     }
   ] 
 }
