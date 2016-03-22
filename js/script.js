@@ -1,9 +1,8 @@
-var oReq = new XMLHttpRequest();
-oReq.open("get", "secrets.json", false);
-oReq.send();
-var consumer_key = JSON.parse(oReq.response)["consumer_key"]
-console.log(consumer_key)
+var secret_object = $.getJSON("js/secrets.json", function(json) {
+  return json;
+});
 
+console.log(secret_object.status);
 var xhr = new XMLHttpRequest();
 xhr.open("GET", "https://api.500px.com/v1/users/16754059/galleries/22707459/items/?consumer_key=" + consumer_key, false);
 //xhr.send();
