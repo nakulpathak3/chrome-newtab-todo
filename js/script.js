@@ -12,7 +12,7 @@ var iDiv = document.createElement('div');
 var response_body = JSON.parse(xhr.response);
 var random_num = Math.floor(Math.random() * response_body["photos"].length);
 
-var css = "body { background-image: url('" + response_body["photos"][random_num]["image_url"] + "'); }",
+var css = "body { background-image: url('https://500px.com" + response_body["photos"][random_num]["url"] + "'); background-size:100%;",
 head = document.head || document.getElementsByTagName('head')[0],
 style = document.createElement('style');
 

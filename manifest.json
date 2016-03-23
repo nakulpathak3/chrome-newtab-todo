@@ -13,5 +13,6 @@
       "css": ["css/stylesheet.css"],
       "js": ["js/script.js"]
     }
-  ] 
+  ],
+  "content_security_policy":"script-src 'self' https://500px.com/*; object-src 'self'"
 }
