@@ -10,7 +10,17 @@ xhr.send();
 
 var iDiv = document.createElement('div');
 var response_body = JSON.parse(xhr.response);
-
 var random_num = Math.floor(Math.random() * response_body["photos"].length);
-iDiv.textContent = response_body["photos"][random_num]["image_url"];
-document.getElementsByTagName('body')[0].appendChild(iDiv);
+
+var css = "body { background-image: url('" + response_body["photos"][random_num]["image_url"] + "'); }",
+head = document.head || document.getElementsByTagName('head')[0],
+style = document.createElement('style');
+
+style.type = 'text/css';
+if (style.styleSheet){
+    style.styleSheet.cssText = css;
+} else {
+    style.appendChild(document.createTextNode(css));
+}
+
+head.appendChild(style);
